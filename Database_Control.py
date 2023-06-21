@@ -6,7 +6,6 @@ import openai
 import json
 import sys
 import platform
-from IPython.display import clear_output
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -175,9 +174,9 @@ def mainmenuAI(query):
 
 
 while True:
-    clear_screen
     user_input = input("Welcome to the SQLite3 Database Tool: ")
     mainmenuAI(user_input)
+    clear_screen
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------
