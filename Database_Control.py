@@ -38,7 +38,7 @@ def ReadDb(conn, c):
 
     for table in tables:
         table_name = table[0]
-        c.execute(f"SELECT * FROM {table_name};")
+        c.execute(f"SELECT * FROM [{table_name}];")
         rows = c.fetchall()
 
         table_data = []
